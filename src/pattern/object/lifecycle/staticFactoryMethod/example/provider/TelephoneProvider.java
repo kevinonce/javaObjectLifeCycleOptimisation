@@ -6,10 +6,9 @@ import pattern.object.lifecycle.staticFactoryMethod.example.service.Telephone;
 
 public class TelephoneProvider implements Provider {
 
-	private static final Service TELEPHONE = new Telephone();
 	@Override
 	public Service getService() {
-		return TELEPHONE;
+		return Telephone.INSTANCE;
 	}
 
 }
